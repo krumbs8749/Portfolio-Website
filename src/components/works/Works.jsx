@@ -18,7 +18,7 @@ export default function Works() {
   const data = [
     {
       id: "1",
-      icon: <GridView className="icon"/>,
+      icon: <Animation className="icon"/>,
       title: "Landing Page",
       desc:
         "A mobile-first landing page that's optimized to the user's device screen size",
@@ -47,6 +47,15 @@ export default function Works() {
     {
       id: "4",
       icon: <Animation className="icon"/>,
+      title: "Quizzical",
+      desc: "Quiz game that's created by fetching a list of question set through API call",
+      img:
+        "assets/Quizzical.png",
+      link: "https://github.com/krumbs8749/Quizzical",
+    },
+    {
+      id: "5",
+      icon: <Animation className="icon"/>,
       title: "WordBeater",
       desc:
         "A simple game of typing words the time given (easy: 5s, medium: 3s, hard: 1s).The highest score is stored in localStorage and displayed on the screen.",
@@ -55,7 +64,7 @@ export default function Works() {
         
     },
     {
-      id: "4",
+      id: "6",
       icon: <Animation className="icon"/>,
       title: "Text-To-Speech",
       desc:
@@ -73,6 +82,7 @@ export default function Works() {
   const transform = matches ? {transform: `translateX(-${currentSlide*100}vw)`} : {transform: `translateX(-${currentSlide*100}vw)`}
   return (
     <div className="works" id="works">
+      <h1>Works</h1>
         <div 
           className="slider"
           style={transform}

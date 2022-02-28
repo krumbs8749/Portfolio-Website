@@ -8,10 +8,14 @@ import {featuredPortfolio,
 
 export default function Portfolio() {
 
-  const [selected, setSelected] = useState("featured")
+  const [selected, setSelected] = useState("web")
   const [data, setData] = useState([])
 
   const list = [
+    {
+        id: "web",
+        title: "Web Dev"
+    },
     {
         id: "featured",
         title: "Featured"
@@ -19,10 +23,6 @@ export default function Portfolio() {
     {
         id: "blockchain",
         title: "Blockchain Dev"
-    },
-    {
-        id: "web",
-        title: "Web Dev"
     },
   ];
 

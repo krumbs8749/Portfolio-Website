@@ -7,6 +7,16 @@
     justify-content: center;
     position: relative;
     overflow-y: hidden;
+
+    h1 {
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        top: 15px;
+        @include mobile {
+            font-size: 40px;   
+        }
+    }
     
     @include mobile {
         flex-direction: column;
@@ -23,11 +33,11 @@
         @include mobile {
             font-size: 40px;
             &.back {
-                top: 100px;
+                top: 80px;
                 left: 0;
             }
             &.foward {
-                bottom: 100px;
+                bottom: 80px;
                 right: 0;
             }
         }

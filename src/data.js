@@ -1,20 +1,13 @@
 export const featuredPortfolio = [
     {
       id: 1,
-      title: "Advanced DAO",
-      img:
-        "assets/DAO.png",
-      link: "",
-    },
-    {
-      id: 2,
       title: "Landing Page",
       img:
         "assets/Desktop_View.png",
       link: "https://github.com/krumbs8749/Easybank-Landing-Page",
     },
     {
-      id: 3,
+      id: 2,
       title: "Realtime Chat App",
       img:
         "assets/Texting.png",
@@ -37,7 +30,7 @@ export const featuredPortfolio = [
       title: "Advanced DAO",
       img:
         "assets/DAO.png",
-      link: "",
+      link: "https://github.com/krumbs8749/AdvancedDAO",
     },
     {
       id: 3,
@@ -69,7 +62,7 @@ export const featuredPortfolio = [
       title: "Quizzical",
       img:
         "assets/Quizzical.png",
-      link: "",
+      link: "https://github.com/krumbs8749/Quizzical",
     },
     {
       id: 4,
