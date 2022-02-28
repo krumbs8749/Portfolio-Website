@@ -4,24 +4,21 @@ export const featuredPortfolio = [
       title: "Advanced DAO",
       img:
         "assets/DAO.png",
+      link: "",
     },
     {
       id: 2,
-      title: "Meme Generator",
+      title: "Landing Page",
       img:
-        "assets/Meme.png",
+        "assets/Desktop_View.png",
+      link: "https://github.com/krumbs8749/Easybank-Landing-Page",
     },
     {
       id: 3,
-      title: "Travel Journal",
+      title: "Realtime Chat App",
       img:
-        "assets/Travel.png",
-    },
-    {
-      id: 4,
-      title: "Relax Mobile App",
-      img:
-        "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+        "assets/Texting.png",
+      link: "https://github.com/krumbs8749/Chat-O-Matic",
     },
   ];
   
@@ -33,18 +30,21 @@ export const featuredPortfolio = [
       title: "NFT Game",
       img:
         "assets/Metaverse.png",
+      link: "https://github.com/krumbs8749/Epic-NFT-Game/tree/master/Back-End",
     },
     {
       id: 2,
       title: "Advanced DAO",
       img:
         "assets/DAO.png",
+      link: "",
     },
     {
       id: 3,
       title: "Mint NFT",
       img:
         "assets/NFT.png",
+      link: "",
     },
     
   ];
@@ -55,36 +55,35 @@ export const featuredPortfolio = [
       title: "Word Beater",
       img:
         "assets/WordBeater.png",
+      link: "https://github.com/krumbs8749/Web-Dev/tree/main/word-beater",
     },
     {
       id: 2,
       title: "Tenzies",
       img:
         "assets/Tenzies.png",
+      link: "",
     },
     {
       id: 3,
-      title: "Travel Log",
-      img:
-        "assets/Travel.png",
-    },
-    {
-      id: 4,
       title: "Quizzical",
       img:
         "assets/Quizzical.png",
+      link: "",
     },
     {
-      id: 5,
+      id: 4,
       title: "Text-To-Speech",
       img:
         "assets/TTS.png",
+      link: "https://github.com/krumbs8749/Web-Dev/tree/main/text-to-speech",
     },
     {
-      id: 6,
+      id: 5,
       title: "Meme Generator",
       img:
         "assets/Meme.png",
+      link: "https://github.com/krumbs8749/Meme-Generator",
     },
   ];
   

@@ -6,6 +6,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow-y: hidden;
+    
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+    }
+   
 
     .arrow {
         font-size: 70px;
@@ -14,14 +21,37 @@
         color: white;
 
         @include mobile {
-            display: none;
+            font-size: 40px;
+            &.back {
+                top: 100px;
+                left: 0;
+            }
+            &.foward {
+                bottom: 100px;
+                right: 0;
+            }
         }
 
         &.back {
             left: 100px;
+            @include mobile {
+                
+                top: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
+            
         }
         &.foward {
             right: 100px;
+            @include mobile {
+                
+                bottom: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                
+            }
         }
     }
 
@@ -29,13 +59,8 @@
         height: 350px;
         display: flex;
         position: absolute;
-        transition: all 1s ease-out;
+        transition: all 400ms ease-out;
         left: 0;
-        @include mobile {
-            height: 100vh;
-            flex-direction: column;
-            justify-content: center;
-        }
         .container {
             width: 100vw;
             display: flex;
@@ -53,9 +78,8 @@
                 justify-content: center;
 
                 @include mobile {
-                    height: 180px;
+                    height: 100%;
                     width: 80%;
-                    margin: 20px 0;
                 }
 
                 .left {
@@ -89,11 +113,16 @@
 
                             
                         }
-                        span {
+                        a {
                             font-size: 12px;
                             font-weight: 500;
+                            color: black;
                             text-decoration: underline;
                             cursor: pointer;
+                            transition: color 150ms ease;
+                            &:hover {
+                                color: #DAADA6;
+                            }
                         }
 
                         @include mobile {

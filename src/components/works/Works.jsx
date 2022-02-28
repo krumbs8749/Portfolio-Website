@@ -1,36 +1,67 @@
 import "./works.scss"
 import {ArrowForwardIos, ArrowBackIos, GridView, Casino, Animation} from '@mui/icons-material';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Works() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  )
+
+  useEffect(() => {
+    window
+    .matchMedia("(min-width: 768px)")
+    .addEventListener('change', e => setMatches( e.matches ));
+  }, []);
 
   const data = [
     {
       id: "1",
       icon: <GridView className="icon"/>,
-      title: "Advanced DAO",
+      title: "Landing Page",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "./assets/DAO.png"
+        "A mobile-first landing page that's optimized to the user's device screen size",
+      img: "./assets/Desktop_View.png",
+      link: "https://github.com/krumbs8749/Easybank-Landing-Page"
     },
     {
       id: "2",
-      icon: <Casino className="icon"/>,
-      title: "Tenzies",
+      icon: <GridView className="icon"/>,
+      title: "Advanced DAO",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "./assets/Tenzies.png"
-        
+        "A blockchain development project that focuses on building a basic Decentralised Autonomous Organization (DAO)",
+      img: "./assets/DAO.png",
+      link: "https://github.com/krumbs8749/AdvancedDAO"
     },
     {
       id: "3",
+      icon: <Casino className="icon"/>,
+      title: "Realtime Chat App",
+      desc:
+        "Realtime Chat App that allows users to chat and receive messages in real-time.",
+      img: "./assets/Texting.png",
+      link: "https://github.com/krumbs8749/Chat-O-Matic"
+        
+    },
+    {
+      id: "4",
       icon: <Animation className="icon"/>,
       title: "WordBeater",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "./assets/WordBeater.png"
+        "A simple game of typing words the time given (easy: 5s, medium: 3s, hard: 1s).The highest score is stored in localStorage and displayed on the screen.",
+      img: "./assets/WordBeater.png",
+      link: "https://github.com/krumbs8749/Web-Dev/tree/main/word-beater"
+        
+    },
+    {
+      id: "4",
+      icon: <Animation className="icon"/>,
+      title: "Text-To-Speech",
+      desc:
+        "A simple website that allows users to type any words and submit them. These words will then be converted to a speech with the voice and language that was selected by users.",
+      img: "./assets/TTS.png",
+      link: "https://github.com/krumbs8749/Web-Dev/tree/main/text-to-speech"
         
     },
   ];
@@ -39,11 +70,12 @@ export default function Works() {
     val === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1: data.length - 1) : 
                     setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0 )
   }
+  const transform = matches ? {transform: `translateX(-${currentSlide*100}vw)`} : {transform: `translateX(-${currentSlide*100}vw)`}
   return (
     <div className="works" id="works">
         <div 
           className="slider"
-          style={{transform: `translateX(-${currentSlide*100}vw)`}}
+          style={transform}
         >
           {data.map(item => {
             return (
@@ -56,7 +88,7 @@ export default function Works() {
                         </div>
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
-                        <span>Projects</span>
+                        <a href={item.link} target="_blank">Projects</a>
                       </div>
                     </div>
                     <div className="right">
