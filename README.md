@@ -36,22 +36,22 @@ These components are then imported to the App.jsx (main component) and finally r
 ### Screenshot
 
 **Desktop View**
- -[Topbar & Intro](./public/assets/Topbar_&_Intro.png)
- -[Portfolio](./public/assets/Portfolio.png)
- -[Works](./public/assets/Works.png)
- -[Contact](./public/assets/Contact.png)
+ - [Topbar & Intro](./public/assets/Topbar_&_Intro.png)
+ - [Portfolio](./public/assets/Portfolio.png)
+ - [Works](./public/assets/Works.png)
+ - [Contact](./public/assets/Contact.png)
 
 **Desktop View with menu opened**
- -[Menu opened](./public/assets/menu_open.png)
+ - [Menu opened](./public/assets/menu_open.png)
 
 **Mobile View**
- -[Topbar & Intro](./public/assets/m_topbar_&_intro.png)
- -[Portfolio](./public/assets/m_portfolio.png)
- -[Works](./public/assets/m_works.png)
- -[Contact](./public/assets/m_contact.png)
+ - [Topbar & Intro](./public/assets/m_topbar_&_intro.png)
+ - [Portfolio](./public/assets/m_portfolio.png)
+ - [Works](./public/assets/m_works.png)
+ - [Contact](./public/assets/m_contact.png)
 
 **Mobile View with menu opened**
- -[Menu opened](./public/assets/m_menu_opened.png)
+ - [Menu opened](./public/assets/m_menu_opened.png)
 
 
 ## My process
