@@ -55,7 +55,7 @@ export const featuredPortfolio = [
       title: "Tenzies",
       img:
         "assets/Tenzies.png",
-      link: "",
+      link: "https://krumbs8749.github.io/Tenzies/",
     },
     {
       id: 3,
