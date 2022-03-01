@@ -23,7 +23,7 @@ export default function Works() {
       desc:
         "A mobile-first landing page that's optimized to the user's device screen size",
       img: "./assets/Desktop_View.png",
-      link: "https://github.com/krumbs8749/Easybank-Landing-Page"
+      link: "https://krumbs8749.github.io/Easybank-Landing-Page/"
     },
     {
       id: "2",
@@ -51,7 +51,7 @@ export default function Works() {
       desc: "Quiz game that's created by fetching a list of question set through API call",
       img:
         "assets/Quizzical.png",
-      link: "https://github.com/krumbs8749/Quizzical",
+      link: "https://krumbs8749.github.io/Quizzical/",
     },
     {
       id: "5",
@@ -60,7 +60,7 @@ export default function Works() {
       desc:
         "A simple game of typing words the time given (easy: 5s, medium: 3s, hard: 1s).The highest score is stored in localStorage and displayed on the screen.",
       img: "./assets/WordBeater.png",
-      link: "https://github.com/krumbs8749/Web-Dev/tree/main/word-beater"
+      link: "https://krumbs8749.github.io/Word-Beater/"
         
     },
     {
@@ -70,7 +70,7 @@ export default function Works() {
       desc:
         "A simple website that allows users to type any words and submit them. These words will then be converted to a speech with the voice and language that was selected by users.",
       img: "./assets/TTS.png",
-      link: "https://github.com/krumbs8749/Web-Dev/tree/main/text-to-speech"
+      link: "https://krumbs8749.github.io/text-to-speech/"
         
     },
   ];

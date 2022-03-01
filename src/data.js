@@ -4,7 +4,7 @@ export const featuredPortfolio = [
       title: "Landing Page",
       img:
         "assets/Desktop_View.png",
-      link: "https://github.com/krumbs8749/Easybank-Landing-Page",
+      link: "https://krumbs8749.github.io/Easybank-Landing-Page/",
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ export const featuredPortfolio = [
       title: "Word Beater",
       img:
         "assets/WordBeater.png",
-      link: "https://github.com/krumbs8749/Web-Dev/tree/main/word-beater",
+      link: "https://krumbs8749.github.io/Word-Beater/",
     },
     {
       id: 2,
@@ -62,21 +62,21 @@ export const featuredPortfolio = [
       title: "Quizzical",
       img:
         "assets/Quizzical.png",
-      link: "https://github.com/krumbs8749/Quizzical",
+      link: "https://krumbs8749.github.io/Quizzical/",
     },
     {
       id: 4,
       title: "Text-To-Speech",
       img:
         "assets/TTS.png",
-      link: "https://github.com/krumbs8749/Web-Dev/tree/main/text-to-speech",
+      link: "https://krumbs8749.github.io/text-to-speech/",
     },
     {
       id: 5,
       title: "Meme Generator",
       img:
         "assets/Meme.png",
-      link: "https://github.com/krumbs8749/Meme-Generator",
+      link: "https://krumbs8749.github.io/Meme-Generator/",
     },
   ];
   
