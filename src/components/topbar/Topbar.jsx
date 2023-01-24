@@ -10,7 +10,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 <a href="#intro" className="logo">krumbs.</a>
                 <div className="itemContainer">
                     <AcUnit className="icon" />
-                    <span>+49 176 3774 6846</span>
+                    <span>+49 176 467 21332</span>
                 </div>
                 <div className="itemContainer">
                     <Mail className="icon"/>
