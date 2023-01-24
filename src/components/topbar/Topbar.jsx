@@ -14,7 +14,7 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 </div>
                 <div className="itemContainer">
                     <Mail className="icon"/>
-                    <span>krumbs8749@gmail.com</span>
+                    <span onClick={() => {navigator.clipboard.writeText("krumbs8749@gmail.com")}}>krumbs8749@gmail.com</span>
                 </div>
             </div>
             

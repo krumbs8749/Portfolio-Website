@@ -78,6 +78,13 @@ export const featuredPortfolio = [
         "assets/Meme.png",
       link: "https://krumbs8749.github.io/Meme-Generator/",
     },
+    {
+      id: 6,
+      title: "Pacman",
+      img:
+        "assets/pacman.png",
+      link: "https://krumbs8749.github.io/Pacman/",
+    }
   ];
   
   
