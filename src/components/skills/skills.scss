@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+.Skills {
+    
+    background-color: #DAADA6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: hidden;
+    padding: 0 30px;
+
+    h1 {
+        font-size: 50px;
+        color: white;
+        overflow: hidden;
+        margin-top: 1rem;
+        @include mobile {
+            font-size: 40px;   
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        width: 100%;
+        height: 100%;    
+
+        .groups, .items{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .groups {
+            span {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: white;
+                border: 1px solid #7dbde3;
+                border-radius: 1rem;
+                padding: .4rem;
+                text-align: center;
+                align-self: center;
+                
+                background: linear-gradient(to right, $mainColor 20%, rgb(137, 210, 219) 40%, rgb(97, 196, 209) 60%, $mainColor 80%);
+                background-size: 200% auto;
+                animation: gradient 3s infinite;
+                
+                @keyframes gradient {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50%{
+                        background-position: 50% 100%;
+                    }
+                    100%{
+                        background-position: 0% 50%;
+                    }
+                }
+            }
+
+            
+        }
+        .items {
+            .language-items, .technologie-items {
+                
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0 3rem;
+                .icon {
+                    height: 4rem;
+                    margin: 0 2rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        height: 5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -27,12 +27,12 @@
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
-                // background: linear-gradient(to right, $mainColor 20%, rgb(137, 210, 219) 40%, rgb(97, 196, 209) 60%, $mainColor 80%);
-                // background-size: 200% auto;
-                // background-clip: text;
-                // color: transparent;
-                // animation: gradient 1.5s infinite;
-                /*
+                background: linear-gradient(to right, $mainColor 20%, rgb(137, 210, 219) 40%, rgb(97, 196, 209) 60%, $mainColor 80%);
+                background-size: 200% auto;
+                background-clip: text;
+                color: transparent;
+                animation: gradient 3s infinite;
+                
                 @keyframes gradient {
                     0% {
                         background-position: 0% 50%;
@@ -44,7 +44,7 @@
                         background-position: 0% 50%;
                     }
                 }
-                */
+                
             }
 
             .itemContainer {
