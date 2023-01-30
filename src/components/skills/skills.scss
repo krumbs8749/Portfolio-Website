@@ -11,11 +11,16 @@
     overflow-y: hidden;
     padding: 0 30px;
 
+    @include mobile {
+        overflow-x: none;
+        width: auto !important;
+    }
+
     h1 {
         font-size: 50px;
         color: white;
         overflow: hidden;
-        margin-top: 1rem;
+        margin: 1rem 0;
         @include mobile {
             font-size: 40px;   
         }
@@ -29,7 +34,7 @@
 
         .groups, .items{
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
         }
         .groups {
             span {
@@ -45,6 +50,10 @@
                 background: linear-gradient(to right, $mainColor 20%, rgb(137, 210, 219) 40%, rgb(97, 196, 209) 60%, $mainColor 80%);
                 background-size: 200% auto;
                 animation: gradient 3s infinite;
+
+                @include mobile {
+                    align-self: flex-start;
+                }
                 
                 @keyframes gradient {
                     0% {
@@ -62,20 +71,31 @@
             
         }
         .items {
-            .language-items, .technologie-items {
+            .language-items, .technologie-items { 
                 
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-start;
+                flex-wrap: wrap;
                 margin: 0 3rem;
+                @include mobile {
+                    margin: 0;
+                }
                 .icon {
                     height: 4rem;
+                    width: auto;;
                     margin: 0 2rem;
                     cursor: pointer;
 
                     &:hover {
                         height: 5rem;
+                    }
+                    @include mobile {
+                        height: 2rem;
+                        &:hover {
+                            height: 3rem;
+                        }
                     }
                 }
             }
